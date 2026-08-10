@@ -16,7 +16,7 @@
     :root {
       --mod-zencustomurlbar-customcolor-final: var(
         --zen-dialog-background,
-        var(--mod-zencustomurlbar-customcolor, rgba(23, 23, 26, 1))
+        var(--mod-zencustomurlbar-customcolor, rgba(46, 52, 64, 1))
       ) !important;
     }
   }
@@ -25,7 +25,7 @@
     :root {
       --mod-zencustomurlbar-customcolor-final: var(
         --mod-zencustomurlbar-customcolor,
-        rgba(23, 23, 26, 1)
+        rgba(46, 52, 64, 1)
       ) !important;
     }
   }
