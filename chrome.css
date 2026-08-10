@@ -30,14 +30,14 @@
     }
   }
 
-  #urlbar[breakout-extend="true"] {
+  #urlbar[breakout-extend] {
     &,
     .urlbar-background {
       border-radius: var(--mod-zencustomurlbar-borderradius, 12px) !important;
     }
   }
 
-  #urlbar[breakout-extend="true"] {
+  #urlbar[breakout-extend] {
     .urlbar-background {
       background: color-mix(
         in srgb,
@@ -48,7 +48,7 @@
     }
   }
 
-  :root:has(#urlbar[breakout-extend="true"]:focus-within) {
+  :root:has(#urlbar[breakout-extend]:focus-within) {
     #zen-tabbox-wrapper {
       filter: blur(var(--mod-zencustomurlbar-blur-final))
         brightness(var(--mod-zencustomurlbar-brightness-final)) !important;
@@ -56,7 +56,7 @@
     }
   }
 
-  :root:not(:has(#urlbar[breakout-extend="true"]:focus-within)) {
+  :root:not(:has(#urlbar[breakout-extend]:focus-within)) {
     #zen-tabbox-wrapper {
       transition: filter 0.25s ease, transform 0.25s var(--zen-tabbox-ease) !important;
       filter: none !important;
