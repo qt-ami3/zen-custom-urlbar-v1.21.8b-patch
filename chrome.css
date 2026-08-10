@@ -1,4 +1,4 @@
-@media (-moz-bool-pref: "mod.zencustomurlbar.useanimation") {
+@media -moz-pref("mod.zencustomurlbar.useanimation") {
   :root {
     --mod-zencustomurlbar-scale-final: var(--mod-zencustomurlbar-scale, 1);
     --mod-zencustomurlbar-blur-final: var(--mod-zencustomurlbar-blur, 5px);
@@ -12,20 +12,20 @@
     );
   }
 
-  @media (-moz-bool-pref: "mod.zencustomurlbar.usefromzen") {
+  @media -moz-pref("mod.zencustomurlbar.usefromzen") {
     :root {
       --mod-zencustomurlbar-customcolor-final: var(
         --zen-dialog-background,
-        var(--mod-zencustomurlbar-customcolor, rgba(46, 52, 64, 1))
+        var(--mod-zencustomurlbar-customcolor, rgba(23, 23, 26, 1))
       ) !important;
     }
   }
 
-  @media not (-moz-bool-pref: "mod.zencustomurlbar.usefromzen") {
+  @media not -moz-pref("mod.zencustomurlbar.usefromzen") {
     :root {
       --mod-zencustomurlbar-customcolor-final: var(
         --mod-zencustomurlbar-customcolor,
-        rgba(46, 52, 64, 1)
+        rgba(23, 23, 26, 1)
       ) !important;
     }
   }
